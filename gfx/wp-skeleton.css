@@ -1,0 +1,449 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+    #Site Styles
+    #Page Styles
+    #Media Queries
+    #Font-Face */
+
+/* #Site Styles
+================================================== */
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+    /* Smaller than standard 960 (devices and browsers) */
+    @media only screen and (max-width: 959px) {}
+
+    /* Tablet Portrait size to standard 960 (devices and browsers) */
+    @media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+    /* All Mobile Sizes (devices and browser) */
+    @media only screen and (max-width: 767px) {}
+
+    /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+    /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+    @media only screen and (max-width: 479px) {}
+
+
+/* #Font-Face
+================================================== */
+/*  This is the proper syntax for an @font-face file
+        Just create a "fonts" folder at the root,
+        copy your FontName into code below and remove
+        comment brackets */
+
+/*  @font-face {
+        font-family: 'FontName';
+        src: url('../fonts/FontName.eot');
+        src: url('../fonts/FontName.eot?iefix') format('eot'),
+             url('../fonts/FontName.woff') format('woff'),
+             url('../fonts/FontName.ttf') format('truetype'),
+             url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+        font-weight: normal;
+        font-style: normal; }
+*/
+
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+
+
+/* #Base 960 Grid
+================================================== */
+
+    .sk-container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+    .sk-container .column,
+    .sk-container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .row                                        { margin-bottom: 20px; }
+
+    /* Nested Column Classes */
+    .column.alpha, .columns.alpha               { margin-left: 0; }
+    .column.omega, .columns.omega               { margin-right: 0; }
+
+    /* Base Grid */
+    .sk-container .one.column,
+    .sk-container .one.columns                     { width: 40px;  }
+    .sk-container .two.columns                     { width: 100px; }
+    .sk-container .three.columns                   { width: 160px; }
+    .sk-container .four.columns                    { width: 220px; }
+    .sk-container .five.columns                    { width: 280px; }
+    .sk-container .six.columns                     { width: 340px; }
+    .sk-container .seven.columns                   { width: 400px; }
+    .sk-container .eight.columns                   { width: 460px; }
+    .sk-container .nine.columns                    { width: 520px; }
+    .sk-container .ten.columns                     { width: 580px; }
+    .sk-container .eleven.columns                  { width: 640px; }
+    .sk-container .twelve.columns                  { width: 700px; }
+    .sk-container .thirteen.columns                { width: 760px; }
+    .sk-container .fourteen.columns                { width: 820px; }
+    .sk-container .fifteen.columns                 { width: 880px; }
+    .sk-container .sixteen.columns                 { width: 940px; }
+
+    .sk-container .one-third.column                { width: 300px; }
+    .sk-container .two-thirds.column               { width: 620px; }
+
+    /* Offsets */
+    .sk-container .offset-by-one                   { padding-left: 60px;  }
+    .sk-container .offset-by-two                   { padding-left: 120px; }
+    .sk-container .offset-by-three                 { padding-left: 180px; }
+    .sk-container .offset-by-four                  { padding-left: 240px; }
+    .sk-container .offset-by-five                  { padding-left: 300px; }
+    .sk-container .offset-by-six                   { padding-left: 360px; }
+    .sk-container .offset-by-seven                 { padding-left: 420px; }
+    .sk-container .offset-by-eight                 { padding-left: 480px; }
+    .sk-container .offset-by-nine                  { padding-left: 540px; }
+    .sk-container .offset-by-ten                   { padding-left: 600px; }
+    .sk-container .offset-by-eleven                { padding-left: 660px; }
+    .sk-container .offset-by-twelve                { padding-left: 720px; }
+    .sk-container .offset-by-thirteen              { padding-left: 780px; }
+    .sk-container .offset-by-fourteen              { padding-left: 840px; }
+    .sk-container .offset-by-fifteen               { padding-left: 900px; }
+
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .sk-container                                  { width: 768px; }
+        .sk-container .column,
+        .sk-container .columns                         { margin-left: 10px; margin-right: 10px;  }
+        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
+        .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
+        .alpha.omega                                { margin-left: 0; margin-right: 0; }
+
+        .sk-container .one.column,
+        .sk-container .one.columns                     { width: 28px; }
+        .sk-container .two.columns                     { width: 76px; }
+        .sk-container .three.columns                   { width: 124px; }
+        .sk-container .four.columns                    { width: 172px; }
+        .sk-container .five.columns                    { width: 220px; }
+        .sk-container .six.columns                     { width: 268px; }
+        .sk-container .seven.columns                   { width: 316px; }
+        .sk-container .eight.columns                   { width: 364px; }
+        .sk-container .nine.columns                    { width: 412px; }
+        .sk-container .ten.columns                     { width: 460px; }
+        .sk-container .eleven.columns                  { width: 508px; }
+        .sk-container .twelve.columns                  { width: 556px; }
+        .sk-container .thirteen.columns                { width: 604px; }
+        .sk-container .fourteen.columns                { width: 652px; }
+        .sk-container .fifteen.columns                 { width: 700px; }
+        .sk-container .sixteen.columns                 { width: 748px; }
+
+        .sk-container .one-third.column                { width: 236px; }
+        .sk-container .two-thirds.column               { width: 492px; }
+
+        /* Offsets */
+        .sk-container .offset-by-one                   { padding-left: 48px; }
+        .sk-container .offset-by-two                   { padding-left: 96px; }
+        .sk-container .offset-by-three                 { padding-left: 144px; }
+        .sk-container .offset-by-four                  { padding-left: 192px; }
+        .sk-container .offset-by-five                  { padding-left: 240px; }
+        .sk-container .offset-by-six                   { padding-left: 288px; }
+        .sk-container .offset-by-seven                 { padding-left: 336px; }
+        .sk-container .offset-by-eight                 { padding-left: 384px; }
+        .sk-container .offset-by-nine                  { padding-left: 432px; }
+        .sk-container .offset-by-ten                   { padding-left: 480px; }
+        .sk-container .offset-by-eleven                { padding-left: 528px; }
+        .sk-container .offset-by-twelve                { padding-left: 576px; }
+        .sk-container .offset-by-thirteen              { padding-left: 624px; }
+        .sk-container .offset-by-fourteen              { padding-left: 672px; }
+        .sk-container .offset-by-fifteen               { padding-left: 720px; }
+    }
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+        .sk-container { width: 300px; }
+        .sk-container .columns,
+        .sk-container .column { margin: 0; }
+
+        .sk-container .one.column,
+        .sk-container .one.columns,
+        .sk-container .two.columns,
+        .sk-container .three.columns,
+        .sk-container .four.columns,
+        .sk-container .five.columns,
+        .sk-container .six.columns,
+        .sk-container .seven.columns,
+        .sk-container .eight.columns,
+        .sk-container .nine.columns,
+        .sk-container .ten.columns,
+        .sk-container .eleven.columns,
+        .sk-container .twelve.columns,
+        .sk-container .thirteen.columns,
+        .sk-container .fourteen.columns,
+        .sk-container .fifteen.columns,
+        .sk-container .sixteen.columns,
+        .sk-container .one-third.column,
+        .sk-container .two-thirds.column  { width: 300px; }
+
+        /* Offsets */
+        .sk-container .offset-by-one,
+        .sk-container .offset-by-two,
+        .sk-container .offset-by-three,
+        .sk-container .offset-by-four,
+        .sk-container .offset-by-five,
+        .sk-container .offset-by-six,
+        .sk-container .offset-by-seven,
+        .sk-container .offset-by-eight,
+        .sk-container .offset-by-nine,
+        .sk-container .offset-by-ten,
+        .sk-container .offset-by-eleven,
+        .sk-container .offset-by-twelve,
+        .sk-container .offset-by-thirteen,
+        .sk-container .offset-by-fourteen,
+        .sk-container .offset-by-fifteen { padding-left: 0; }
+
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .sk-container { width: 420px; }
+        .sk-container .columns,
+        .sk-container .column { margin: 0; }
+
+        .sk-container .one.column,
+        .sk-container .one.columns,
+        .sk-container .two.columns,
+        .sk-container .three.columns,
+        .sk-container .four.columns,
+        .sk-container .five.columns,
+        .sk-container .six.columns,
+        .sk-container .seven.columns,
+        .sk-container .eight.columns,
+        .sk-container .nine.columns,
+        .sk-container .ten.columns,
+        .sk-container .eleven.columns,
+        .sk-container .twelve.columns,
+        .sk-container .thirteen.columns,
+        .sk-container .fourteen.columns,
+        .sk-container .fifteen.columns,
+        .sk-container .sixteen.columns,
+        .sk-container .one-third.column,
+        .sk-container .two-thirds.column { width: 420px; }
+    }
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .sk-container:after { content: " "; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '?020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after,.clearfix {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Content
+==================================================
+    #Reset & Basics
+    #Basic Styles
+    #Site Styles
+    #Typography
+    #Links
+    #Lists
+    #Images
+    #Buttons
+    #Forms
+    #Misc */
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, th, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline; }
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block; }
+    body {
+        line-height: 1; }
+    ol, ul {
+        list-style: none; }
+    blockquote, q {
+        quotes: none; }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none; }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0; }
+
+/* #Misc
+================================================== */
+    .remove-bottom { margin-bottom: 0 !important; }
+    .half-bottom { margin-bottom: 10px !important; }
+    .add-bottom { margin-bottom: 20px !important; }
+
+
+/* #Basic Styles
+================================================== */
+    body {
+        -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+        -webkit-text-size-adjust: 100%;
+ }
+
+
+/* #Typography
+================================================== */
+   
+
+
+
+
+
+/* #Lists
+================================================== */
+    ul, ol { margin-bottom: 20px; }
+    ul { list-style: none outside; }
+    ol { list-style: decimal; }
+    ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+    ul.square { list-style: square outside; }
+    ul.circle { list-style: circle outside; }
+    ul.disc { list-style: disc outside; }
+    ul ul, ul ol,
+    ol ol, ol ul { margin: 4px 0 0px 30px; font-size: 90%;  }
+    ul ul li, ul ol li,
+    ol ol li, ol ul li { }
+    li {  }
+    ul.large li { line-height: 21px; }
+    li p { line-height: 21px; }
+
+/* #Images
+================================================== */
+
+    img.scale-with-grid {
+        max-width: 100%;
+        height: auto; }
+
+/* #Forms
+================================================== */
+
+    form {
+        margin-bottom: 20px; }
+    fieldset {
+        margin-bottom: 20px; }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea,
+    select {
+        border: 1px solid #ccc;
+        padding: 6px 4px;
+        outline: none;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        color: #777;
+        margin: 0;
+        width: 210px;
+        /*max-width: 100%;*/
+        display: block;
+        margin-bottom: 20px;
+        background: #fff; }
+    /*select {
+        padding: 0; }*/
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        border: 1px solid #aaa;
+        color: #444;
+        -moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+        -webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+        box-shadow:  0 0 3px rgba(0,0,0,.2); }
+    textarea {
+        min-height: 60px; }
+    label,
+    legend {
+        display: block;
+        font-weight: bold;
+        font-size: 13px;  }
+    select {
+        width: 220px; }
+    input[type="checkbox"] {
+        display: inline; }
+    label span,
+    legend span {
+        font-weight: normal;
+        font-size: 13px; }
+
+/* SKELETON END ================================== */
