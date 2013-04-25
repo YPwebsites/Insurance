@@ -68,26 +68,7 @@ $(document).ready(function(){
      </div>  
      <!-- end mobile menu button --> 
      <div id="m-menu-content">
-        <ul id="nav">
-            <li class="current first"><a href="#">Home</a>
-                <ul>
-                    <li><a href="#">drop 1</a>
-                        <ul>
-                            <li><a href="#">drop 2</a></li>
-                            <li><a href="#">drop 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">drop 1</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Services</a></li>
-            <li class="last"><a href="#">Contact Us</a>
-                <ul>
-                    <li><a href="#">drop 2</a></li>
-                    <li><a href="#">drop 2</a></li>
-                </ul>
-            </li>	
-        </ul>    
+        {Site_Menu}   
      </div>
 </nav>
 <!-- end mobile menu -->
@@ -107,28 +88,7 @@ $(document).ready(function(){
     	
         <!-- Start nav#menu -->
   		<nav id="menu" class="sixteen columns">
-        	<ul id="nav">
-        		<li class="current first"><a href="#">Home</a>
-                	<ul>
-                    	<li><a href="#">drop 1</a>
-                        	<ul>
-                                <li><a href="#">drop 2</a></li>
-                                <li><a href="#">drop 2</a></li>
-                                <li><a href="#">drop 2</a></li>
-                                <li><a href="#">drop 2</a></li>
-                                <li><a href="#">drop 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">drop 1</a></li>
-                        <li><a href="#">drop 1</a></li>
-                        <li><a href="#">drop 1</a></li>
-                        <li><a href="#">drop 1</a></li>
-                    </ul>
-                 
-                </li>
-                <li><a href="#">Services</a></li>
-                <li class="last"><a href="#">Contact Us</a></li>	
-            </ul>
+        	{Site_Menu}
         </nav>
         <!-- End nav#menu -->
         
@@ -136,7 +96,7 @@ $(document).ready(function(){
      	<!-- start header image -->
         <!-- {HEADER_IMAGE_1} -->
      	<div id="header-image-container" class="sixteen columns">
-   	    	<img id="siteMainDynHeaderImage1" src="gfx/header_image_1.jpg" >
+   	    	{HEADER_IMAGE_1}
         </div> 
      	<!-- end header image -->
  
@@ -151,166 +111,7 @@ $(document).ready(function(){
         <section id="content" class="sixteen columns">
         	<!-- Page title only required on internal pages -->
         	<h2>{CONTENT_TITLE_ONLY}</h2> 
-        	<!-- replace section#content innerHTML with {CONTENT_DATA} -->
-        	<!-- Start Callouts; this is Websplanet code to simulate the Default Site callouts -->
-            <style>
-				div#widetExamples {	}
-				.vertical {float: left;}
-			</style>
-            <div style="" class="horizontal clearfix callouts">
-                <div style="width: 50%;" class="vertical ">
-                    <div style="" class="diy-f-spot callout1">
-                        <div class="diy-f-spot-inner">
-                            <div class="widget-wrapper free-image diy-resizable ">
-                                <div class="widget-body">
-                                    <div style="max-width:100%; float:left;;" class="freetext-image resize-wrapper">
-                                        <div style="margin:auto; line-height: 0; border: 5px solid #ffffff" class="image_wrapper">
-                                            <img alt="" style="width:100%;" src="gfx/cta-Image.jpg">
-                                        </div>
-                                        <p class="figcaption"></p>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                            <div class="widget-wrapper free-text diy-resizable ">
-                                <div class="widget-body">
-                                    <div class="freetextarea">
-            							<h3>Services</h3>
-                                        <p>
-                                        	<span>
-                                            	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
-                                            </span>
-                                        </p>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-                </div>
-                <div style="width: 50%;" class="vertical ">
-                    <div style="" class="diy-f-spot callout2">
-                        <div class="diy-f-spot-inner">
-                            <div class="widget-wrapper free-image diy-resizable ">
-                                <div class="widget-body">
-                                    <div style="max-width:100%; float:left;;" class="freetext-image resize-wrapper">
-                                        <div style="margin:auto; line-height: 0; border: 5px solid #ffffff" class="image_wrapper">
-                                            <img alt="" style="width:100%;" src="gfx/cta-Image.jpg">
-                                        </div>
-                                        <p class="figcaption"></p>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                            <div class="widget-wrapper free-text diy-resizable ">
-                                <div class="widget-body">
-                                    <div class="freetextarea">
-            							<h3>Contact Us</h3>
-                                        <p>
-                                        	<span>
-                                            	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
-                                            </span>
-                                        </p>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>                
-            <!-- end Callouts -->
-            <!-- start element examples; NOTE: containing div is for margins that would be rendered by .widget-wrapper -->
-            <div id="widetExamples">
-            	<div class="eight columns alpha">
-    				<!-- Header elements -->
-                    <h1>This is a header 1</h1>
-                    <h2>This is a header 2</h2>
-                    <h3>This is a header 3</h3>
-                    <h4>This is a header 4</h4>
-                    <h5>This is a header 5</h5>
-                    <h6>This is a header 5</h6>
-                </div>
-                <div class="eight columns omega">
-                    <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</blockquote>
-                </div>
-                <div class="clear"></div>
-                <hr>
-                <div class="twelve columns alpha">
-                	<!-- Paragraph and link elements -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem sapien, venenatis quis dictum nec, ultricies in odio. Sed eget lacus sem, id tincidunt purus. Nam rhoncus, enim luctus gravida viverra, nisl eros malesuada nunc, ac ultricies metus velit
-                        vel lectus. <a href="#">Curabitur lobortis</a> viverra elementum. Duis sit amet nisi ut lacus posuere molestie et ac odio.</p>
-                    <p>Sed mauris magna, consectetur ut mattis vitae, volutpat quis diam. Nulla velit sapien, aliquet sit amet vehicula sit amet, ornare eu orci. Suspendisse nec erat risus, mollis tempus orci. Suspendisse tempus tristique consectetur.</p>
-                    <!-- UL/OL elements -->
-                    <div class="six columns alpha">
-                        <ul>
-                            <li>Listed Item</li>
-                            <li>Listed Item</li>
-                            <li>Listed Item</li>
-                            <li>Listed Item</li>
-                            <li>Listed Item</li>
-                            <li>Listed Item</li>
-                        </ul>
-                    </div>
-                    <div class="six columns omega">
-                        <ol>
-                            <li>Numbered list</li>
-                            <li>Numbered list</li>
-                            <li>Numbered list</li>
-                            <li>Numbered list</li>
-                            <li>Numbered list</li>
-                        </ol>
-                    </div>
-                    <div class="clear"></div>
-                    <!-- Widget Buttons are very important to style out -->
-                    <div class="widget-button">Widget Button</div>
-                </div>
-                <div class="four columns omega">
-                	<!-- Form Elements -->
-                    <form>
-                        <ul>
-                            <li>
-                                <label>Name:</label>
-                                <input value="eg John Doe" type="text" />
-                            </li>
-                            <li>
-                                <label>Email:</label>
-                                <input value="eg johnDoe@email.com" type="text" />
-                            </li>
-                            <li>
-                                <label>Select One:</label>
-                                <select>
-                                    <option>option 1</option>
-                                    <option>option 2</option>
-                                    <option>option 3</option>
-                                </select>
-                            </li>
-                            <li>
-                                <label>Radio Buttons</label>
-                                <input type="radio" name="radioButs" />Option 1
-                                <input type="radio" name="radioButs" />Option 2</li>
-                            <li>
-                                <label>Check boxes</label>
-                                <input type="checkbox" name="checkbox" />Option 1
-                                <input type="checkbox" name="checkbox" />Option 2</li>
-                            <li>
-                                <label>Comments</label>
-                                <textarea>Leave Comments here...</textarea>
-                            </li>
-                            <li>
-                                <input type="file" />
-                            </li>
-                        </ul>
-                        <input type="submit" value="Submit" />
-                        <input type="reset" value="Clear Form" />
-                    </form>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <!-- end element examples -->
-            
+        	{CONTENT_DATA}
         </section> <!-- end content area -->
     </div><!-- end sk-container -->
 </div>
@@ -325,12 +126,7 @@ $(document).ready(function(){
         
         <!-- start mirrior menu module -->
         <nav class="sixteen columns">
-        	<!-- {MODULE_MIRROR_MENU} -->
-            <ul id="mirror-menu-module">
-                <li class="first"><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li class="last"><a href="#">Contact Us</a></li>	
-            </ul>
+        	{MODULE_MIRROR_MENU}
         </nav>  
         <!-- end mirrior menu module -->
     </footer>    

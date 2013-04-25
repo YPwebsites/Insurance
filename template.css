@@ -18,11 +18,11 @@ body {
 }
 	body { 
 		/* Set background image POSITION and REPEAT here! */
-		background: transparent url(gfx/contentBG2.jpg) repeat scroll top left;	
+		background: transparent url("gfx/contentBG2.jpg") repeat scroll top left;	
 	}
 		
 .skinBg { 
-	background-image: url(gfx/coverBG.jpg);
+	background-image: url("gfx/coverBG.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom center;
@@ -769,7 +769,7 @@ ul#mirror-menu-module:before {
 	width: 33px;
 	left: -33px;
 	top: 0;
-	background: transparent url(gfx/modNavLeft.png) top right no-repeat scroll;
+	background: transparent url("gfx/modNavLeft.png") top right no-repeat scroll;
 }
 ul#mirror-menu-module:after {
 	position: absolute;
@@ -778,7 +778,7 @@ ul#mirror-menu-module:after {
 	width: 33px;
 	right: -33px;
 	top: 0;
-	background: transparent url(gfx/modNavRight.png) top right no-repeat scroll;	
+	background: transparent url("gfx/modNavRight.png") top right no-repeat scroll;	
 }
 ul#mirror-menu-module li {
 	display: inline; /* remove and add float if you want the text left justified */
