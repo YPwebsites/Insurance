@@ -10,7 +10,7 @@ Updated mobile menu 4/5/2013
 Markup-Cleanup 4/19/2013
  */
 
-@import url("gfx/wp-skeleton.css"); 
+@import url("http://conorstest.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_0/05/050/367/gfx/wp-skeleton.css"); 
 
 header, footer, nav, section, article {display: block;}
 
@@ -23,11 +23,11 @@ body {
 }
 	body { 
 		/* Set background image POSITION and REPEAT here! */
-		background: transparent url("gfx/contentBG2.jpg") repeat scroll top left;	
+		background: transparent url("http://conorstest.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_0/05/050/367/gfx/contentBG2.jpg") repeat scroll top left;	
 	}
 		
 .skinBg { 
-	background-image: url("gfx/coverBG.jpg");
+	background-image: url("http://conorstest.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_0/05/050/367/gfx/coverBG.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom center;
@@ -62,7 +62,7 @@ h5, h5 span, h5 font span {
 	font-size : 20px;  
 }
 h6, h6 span, h6 font span { 
-	font-size : 20px; 
+	font-size : 16px; 
 }
 
 /* 3.TYPOGRAPHY */
@@ -115,9 +115,7 @@ div {
 	div.ui-widget-content div#containingBlock, 
 	div.ui-widget-content div.calc-input-container, 
 	div.ui-widget-content div.calc-input-container span,
-	div.diy-f-spot div.freetextarea,
-	div.diy-f-spot div.reviewItem, 
-	div.diy-f-spot div.freetextarea, 
+	div.diy-f-spot div.reviewItem,  
 	div.diy-f-spot label, 
 	div.diy-f-spot div.rss, 
 	div.diy-f-spot div#ReviewsWidget, 
@@ -155,17 +153,23 @@ dd {
 dt { 
 	font-weight : normal; 
 }
-blockquote  { 
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 24px;
-	margin : 0 0 1.5em 24px; 
+blockquote { 
+	margin : 0 0 1.5em 24px;
 	padding-left : 24px; 
 	border-left : 1px solid #97C3F2; /* hex code can be used here too */
+}
+blockquote div,
+blockquote p,
+blockquote span {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
 	font-style : italic; 
 	font-weight: bold;
 	line-height: 1.1;
 	color: #cccccc;
+	
 }
+
 blockquote:before, 
 blockquote:after, 
 q:before, 
@@ -444,7 +448,7 @@ ul#nav {
 	ul#nav > li.last { 
 		border-right: 1px solid #262837;
 	}
-	ul#nav li.first { 
+	ul#nav > li.first { 
 		margin-left: 9px;
 	}
 	ul#nav li a {
@@ -586,7 +590,7 @@ ul#nav {
 		cursor:pointer;
 		margin:6px auto;
 		z-index: 800;
-		background-image:url("gfx/icon-menu.png");
+		background-image:url("http://conorstest.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_0/05/050/367/gfx/icon-menu.png");
 		background-repeat:no-repeat;
 		background-position:top center;
 		z-index:900;
@@ -651,6 +655,7 @@ ul#nav {
 	}	
 	#m-menu ul#nav li a {
 		font-size: 14px;
+
 		text-decoration: none;
 		line-height:44px; /* line height is better than top and bottom padding */
 		display: block;
@@ -774,7 +779,7 @@ ul#mirror-menu-module:before {
 	width: 33px;
 	left: -33px;
 	top: 0;
-	background: transparent url("gfx/modNavLeft.png") top right no-repeat scroll;
+	background: transparent url("http://conorstest.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_0/05/050/367/gfx/modNavLeft.png") top right no-repeat scroll;
 }
 ul#mirror-menu-module:after {
 	position: absolute;
@@ -783,7 +788,7 @@ ul#mirror-menu-module:after {
 	width: 33px;
 	right: -33px;
 	top: 0;
-	background: transparent url("gfx/modNavRight.png") top right no-repeat scroll;	
+	background: transparent url("http://conorstest.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_0/05/050/367/gfx/modNavRight.png") top right no-repeat scroll;	
 }
 ul#mirror-menu-module li {
 	display: inline; /* remove and add float if you want the text left justified */
@@ -842,7 +847,8 @@ input[type="text"],
 input[type="password"], 
 input[type="email"], 
 textarea {
-	width: 95%;
+	width: 98.5% !important;
+	clear: left;
 }
 select {
 	width: 100% !important;	
@@ -854,6 +860,9 @@ select {
 }
 label {
 	
+}
+input[type="text"] {
+	padding-top: 0px !important;
 }
 input[type="text"],
 select,
@@ -892,12 +901,12 @@ textarea {
 }
 input[type="submit"], 
 input[type="reset"] {
-	padding: 3px 6px;
+	padding: 6px 10px;
 	text-align:center;  
 	z-index:1001;
 	-moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
+    	-webkit-border-radius:5px;
+    	border-radius:5px;
 	color: #cccccc;
 	text-shadow: 0 -1px 1px #262837;
 	-webkit-text-shadow: 0 -1px 1px #262837;
@@ -926,6 +935,13 @@ input[type="reset"]:active {
 	background:#424e62;
 	filter: progid:DXImageTransform.Microsoft.gradient( enabled=false );
 }
+div.formManagerFront dd {
+	margin-bottom: 10px;
+}
+div.contactUsFront dd {
+	margin-bottom: 7px;
+}
+
 
 /* ----- Websplanet widget form classes ----- */
 .calculator-btn { /* match input[type=submit] styling */ }
@@ -1048,8 +1064,8 @@ div.unit-calc li.unit-menu ul.unit-type li a:hover {
 	text-align:center;  
 	z-index:1001;
 	-moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
+    	-webkit-border-radius:5px;
+    	border-radius:5px;
 	font-size: 24px;
 	line-height: 50px;
 	color: #cccccc;
@@ -1123,7 +1139,7 @@ div.widget-button:active {
 	height: 46px;
 	display: block;
 	margin-bottom: 7px;
-	background: #031533 url("gfx/back-to-top.png") no-repeat center center;
+	background: #031533 url("http://conorstest.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_0/05/050/367/gfx/back-to-top.png") no-repeat center center;
 	/* rounded corners */
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -1187,7 +1203,7 @@ a.m-click-map span {
 	overflow:hidden;
 	text-align:center;
 	margin:0 auto;
-	background-image: url("gfx/mobile-panel-icons.png");
+	background-image: url("http://conorstest.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_0/05/050/367/gfx/mobile-panel-icons.png");
 	background-repeat:no-repeat;
 	display:block;
 	padding:0px;
@@ -1217,7 +1233,12 @@ a.m-click-map span{
    --------------- Websplanet widget fixes --------------- 
    -------------------------------------------------------
 */
-
+.fancybox-inner * {
+    color: #666666;
+}
+.fancybox-inner input[type=text], .fancybox-inner textarea {
+    width: 75% !important;
+}
 /* Websplanet mobile fixes */
 form ul {
     list-style: none;
@@ -1231,8 +1252,8 @@ a.websplanet {
 	text-decoration: underline;
 }
 .footerLinks {
-    float: right;
-    text-align: left;
+    float: none;
+    text-align: center;
 }
 .footerText {
 	display: none; /* these are just empty spans in the footer area, display none lets .addthis_toolbox to be aligned properly */
@@ -1267,6 +1288,9 @@ iframe#Guesbook_csiframe {
 }
 .ypreviews {
 	margin-bottom:30px;
+}
+div#ReviewsWidget {
+    margin: 0 !important; /* this div has a class of .widget-wrapper even though it's within another .widget-wrapper */
 }
 /* RSS widget styling --- rss feed widget styeling, typography is completely different */
 .rss-item-title a {
@@ -1488,6 +1512,9 @@ li.checkboxPaymentMethod {
 .Events_item_date {
     padding-top: 6px;
 }
+div.Events_item_desc {
+    clear: both;
+}
 .Events_item_title a {
     font-size: 21px;
     line-height: 24px;
@@ -1499,34 +1526,61 @@ li.checkboxPaymentMethod {
 div.Events_item {
 	padding: 0;
 }
-#FAQ_category_list li a,
-#FAQ_category_list li a:visited {
-    background-color: red; /* replace with theme color */
-    border-radius: 10px 10px 10px 10px;
-    font-family: Arial, Helvetica, sans-serif; /* replace with theme fonts */
-    font-size: 21px;
-    height: auto;
-    line-height: 40px;
-    text-align: center;
-    width: auto;
-    z-index: 1001;
-    color: #fff;
-    border: none;
+div#Events_full_item div {
+    color: #e5e5e5 !important;
 }
-#FAQ_category_list li a:hover,
-#FAQ_category_list li a:focus,
-#FAQ_category_list li a:active {
+#FAQ_category_list li > a,
+#FAQ_category_list li > a:visited {
+    font-family: Arial, Helvetica, sans-serif; /* replace with theme fonts */
+    width:auto; 
+	height:auto; 
+	text-align:center;  
+	z-index:1001;
+	-moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+	font-size: 24px;
+	line-height: 50px;
+	color: #cccccc;
+	text-shadow: 0 -1px 1px #262837;
+	-webkit-text-shadow: 0 -1px 1px #262837;
+	text-transform: uppercase;
+	border-top: 1px solid #6D798C;
+	border-left: none;
+	background: #424e62; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQyNGU2MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMzQwNTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #424e62 0%, #334053 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#424e62), color-stop(100%,#334053)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #424e62 0%,#334053 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #424e62 0%,#334053 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #424e62 0%,#334053 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #424e62 0%,#334053 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424e62', endColorstr='#334053',GradientType=0 ); /* IE6-8 */
+	border-right: none;
+	border-bottom: 1px solid #262837;
+    
+}
+#FAQ_category_list li > a:hover,
+#FAQ_category_list li > a:active {
 	cursor:pointer;
-	box-shadow: 0 0 10px #000000 inset;
-	-webkit-box-shadow: 0 0 10px #000000 inset;
-	background: red; /* replace with theme color */
-    filter: progid:DXImageTransform.Microsoft.gradient( enabled=false );
+	background:#424e62;
+	filter: progid:DXImageTransform.Microsoft.gradient( enabled=false );
 }
 ul#FAQ_category_list span {
 	margin: 0 12px 24px;
+	color: #e5e5e5 !important;
 }
 div.jobs-desc p {
     padding: 10px;
+    
+}
+div.jobs-desc * {
+	color: #e5e5e5 !important;
+	text-indent: 0px !important;
+}
+#jobs-module li .jobs-title a {
+	color: #97C3F2;
 }
 div#jobs-module ul {
     margin: 0;
@@ -1539,33 +1593,49 @@ div#jobs-module ul {
 	font-family: Arial, Helvetica, sans-serif; /* replace with theme fonts */
 	font-size: 24px;
 	padding-left: 0px;
-	color: #E40A0A; /* replace with theme color */
+	color: #97C3F2; /* replace with theme color */
 }
 .jobs-title a:hover,
-.jobs-title a:focus,
 .jobs-title a:active {
 	text-decoration: underline;
 }
 .jobs-apply a {
-    background-color: #E40A0A; /* replace with theme color */
-    border-radius: 10px 10px 10px 10px;
+    
     font-family: Arial, Helvetica, sans-serif;/* replace with theme fonts */
-    font-size: 16px;
-    height: auto;
-    line-height: 40px;
-    text-align: center;
-    width: 100%;
-    z-index: 1001;
-    color: #fff;
-    border: none;
+    
+	height:auto; 
+	text-align:center;  
+	z-index:1001;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	font-size: 24px;
+	line-height: 50px;
+	color: #cccccc;
+	text-shadow: 0 -1px 1px #262837;
+	-webkit-text-shadow: 0 -1px 1px #262837;
+	text-transform: uppercase;
+	border-top: 1px solid #6D798C;
+	border-left: none;
+	background: #424e62; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQyNGU2MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMzQwNTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #424e62 0%, #334053 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#424e62), color-stop(100%,#334053)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #424e62 0%,#334053 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #424e62 0%,#334053 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #424e62 0%,#334053 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #424e62 0%,#334053 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424e62', endColorstr='#334053',GradientType=0 ); /* IE6-8 */
+	border-right: none;
+	border-bottom: 1px solid #262837;
 }
 .jobs-apply a:hover,
-.jobs-apply a:active,
 .jobs-apply a:focus {
-    cursor:pointer;
-	box-shadow: 0 0 10px #000000 inset;
-	-webkit-box-shadow: 0 0 10px #000000 inset;
-	background: #E40A0A; /* replace with theme color */
+    	cursor:pointer;
+	background:#424e62;
+	filter: progid:DXImageTransform.Microsoft.gradient( enabled=false );
+	text-decoration: none;
 }
 /* --------------- end Websplanet module fixes --------------- */
 
@@ -1575,6 +1645,9 @@ div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inne
 	width:45% !important;
 	float:left !important;
 	margin-right: 0 !important;
+}
+div.horizontal.callouts div.vertical div.diy-f-spot {
+	margin-bottom: 0px;
 }	
 @media screen and (max-width: 767px) {
 	div.horizontal.callouts div.vertical div.diy-f-spot.callout1 div.diy-f-spot-inner div.widget-wrapper,
@@ -1589,4 +1662,9 @@ div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inne
 		width: 100% !important;
 		float: none;	
 	}	
+}
+div.horizontal.callouts div.vertical div.diy-f-spot img {
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 4px -1px #000;
+    -webkit-box-shadow: 0 2px 4px -1px #000;
 }
