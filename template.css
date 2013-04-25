@@ -1,4 +1,9 @@
-/*YP Horizontal Framework A v4.1 - 4-19-2013
+/*
+Insurance Template - 4/25/2013
+Orig des by Kyle Brit, Des update by Anna Lee, final Des and full Dev by Conor kelly
+ck7630@yp.com
+
+YP Horizontal Framework A v4.1 - 4-19-2013
 fixed calculators and typography 
 MODULE STYLING  added 4/4/2013
 Updated mobile menu 4/5/2013
@@ -840,11 +845,11 @@ textarea {
 	width: 95%;
 }
 select {
-	width: 100%;	
+	width: 100% !important;	
 }
 @media only screen and (max-width: 767px) {
 	select {
-		width: 97.45%;	
+		width: 97.45% !important;	
 	}
 }
 label {
@@ -1578,4 +1583,10 @@ div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inne
 		float:left !important;
 		margin-right: 15px !important;
 	}
+}
+@media only screen and (max-width: 479px) {
+	div.horizontal.callouts div.vertical {
+		width: 100% !important;
+		float: none;	
+	}	
 }
